@@ -1,0 +1,169 @@
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F8FF;
+    color: #333333;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Main headings */
+h1 {
+    color: #FFFFFF;
+    background-color: #000080;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #333333;
+}
+
+h2, h3 {
+    color: #000080;
+    margin: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px;
+}
+
+/* Horizontal line */
+hr {
+    border: 1px solid #000080;
+}
+
+/* Links */
+a {
+    color: #0000FF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Link hover */
+a:hover {
+    color: #FF0000;
+}
+
+/* Navigation list in index.html */
+body > h1 + hr + ul {
+    background-color: #ADD8E6;
+    padding: 15px;
+}
+
+/* Lists */
+li {
+    margin: 10px;
+    padding: 3px;
+}
+
+/* Profile image */
+img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #000080;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Tables */
+table {
+    width: 90%;
+    border: 2px solid #000080;
+    border-collapse: collapse;
+    margin: 20px;
+    background-color: #FFFFFF;
+}
+
+/* Table headings and cells */
+th, td {
+    border: 1px solid #000080;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table heading */
+th {
+    color: #FFFFFF;
+    background-color: #000080;
+}
+
+/* Table rows */
+td {
+    color: #333333;
+}
+
+/* Highlighted text */
+mark {
+    background-color: #ADD8E6;
+    color: #000080;
+}
+
+/* Contact form */
+form {
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000080;
+}
+
+/* Labels */
+label {
+    color: #000080;
+    font-weight: bold;
+}
+
+/* Input fields */
+input, textarea {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #000080;
+}
+
+/* Buttons */
+button {
+    color: #FFFFFF;
+    background-color: #000080;
+    padding: 10px 15px;
+    border: 2px solid #000080;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #0000FF;
+}
+
+/* Static positioning */
+.static-example {
+    position: static;
+}
+
+/* Relative positioning */
+.relative-example {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+/* Parent for absolute positioning */
+.position-demo {
+    position: relative;
+}
+
+/* Absolute positioning */
+.absolute-example {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Fixed positioning */
+.fixed-example {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
