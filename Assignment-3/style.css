@@ -1,0 +1,265 @@
+
+/* ==========================================
+   PERSONAL PORTFOLIO WEBSITE
+   CSS STYLESHEET
+   ========================================== */
+
+
+/* 1. GENERAL STYLING */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F8FF;
+    color: #333333;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+/* 2. HEADING STYLING */
+
+h1 {
+    color: #FFFFFF;
+    background-color: #000080;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #333333;
+}
+
+h2, h3 {
+    color: #000080;
+    margin: 20px;
+}
+
+
+/* 3. PARAGRAPH STYLING */
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px;
+}
+
+
+/* 4. HORIZONTAL LINE */
+
+hr {
+    border: 1px solid #000080;
+}
+
+
+/* 5. LINK STYLING */
+
+a {
+    color: #0000FF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+
+/* 6. NAVIGATION BAR USING FLEXBOX */
+
+body > h1 + hr + ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    list-style-type: none;
+    background-color: #ADD8E6;
+    padding: 15px;
+}
+
+body > h1 + hr + ul li {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* 7. GENERAL LIST STYLING */
+
+li {
+    margin: 10px;
+    padding: 3px;
+}
+
+
+/* 8. PROFILE IMAGE */
+
+img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #000080;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* 9. TABLE STYLING */
+
+table {
+    width: 90%;
+    border: 2px solid #000080;
+    border-collapse: collapse;
+    margin: 20px;
+    background-color: #FFFFFF;
+}
+
+th, td {
+    border: 1px solid #000080;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    color: #FFFFFF;
+    background-color: #000080;
+}
+
+td {
+    color: #333333;
+}
+
+
+/* 10. HIGHLIGHTED TEXT */
+
+mark {
+    background-color: #ADD8E6;
+    color: #000080;
+}
+
+
+/* 11. CONTACT FORM */
+
+form {
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000080;
+}
+
+label {
+    color: #000080;
+    font-weight: bold;
+}
+
+
+/* 12. INPUT FIELDS */
+
+input, textarea {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #000080;
+}
+
+
+/* 13. BUTTON STYLING */
+
+button {
+    color: #FFFFFF;
+    background-color: #000080;
+    padding: 10px 15px;
+    border: 2px solid #000080;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0000FF;
+}
+
+
+/* 14. POSITIONING TECHNIQUES */
+
+/* STATIC POSITIONING */
+
+.static-example {
+    position: static;
+}
+
+
+/* RELATIVE POSITIONING */
+
+.relative-example {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+
+/* ABSOLUTE POSITIONING */
+
+.position-demo {
+    position: relative;
+}
+
+.absolute-example {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* FIXED POSITIONING */
+
+.fixed-example {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* 15. FLEXBOX FOR FORM BUTTONS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form button {
+    margin: 5px;
+}
+
+
+/* 16. CSS GRID FOR PROJECT CARDS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-grid p {
+    background-color: #FFFFFF;
+    border: 2px solid #000080;
+    padding: 20px;
+    margin: 0;
+}
+
+
+/* 17. CSS GRID FOR SKILLS OR OTHER CONTENT */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* 18. FIXED ELEMENT APPEARANCE */
+
+.fixed-example {
+    background-color: #000080;
+    color: #FFFFFF;
+    padding: 10px;
+    border: 2px solid #0000FF;
+}
