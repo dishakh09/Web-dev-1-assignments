@@ -1,81 +1,88 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" 
-        content="width=device-width,initial scale=1.0">
-        <title>Disha khandelwal</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Disha Khandelwal</h1>
-        <hr>
-        <ul>
-            <li><a href="about_me.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="project.html">Projects</a></li>
-        </ul>
-        
-        
-        <h3>Welcome to my portfolio.</h3>
-        <br>
-        <br>
-        <p>Hello,I am a web development student.This is my portfolio website.</p>
-        <br>
-        <br>
-        <img src="Me.jpg.jpeg" alt="My Image" style="width:250px;height:250px;object-fit:cover;border-radius:50%">
-        <p>I am passionate about learning web development and building creative projects.</p>
-        <h1>MY PROJECTS</h1>
-        <p><b><i>1.Personal Website:</i></b>Personal one page website to showcase the bio,skills,and contact details.</p>
-        <p><b><i>2.User Form:</i></b>A form webpage with fiels like name,email,phone,and message for practicing form handling.
-        </p>
-        <br>
-        <br>
-        <h1>Techinal Skills</h1>
-        <table cellpadding="10" cellspacing="0" border="1">
-            <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Level</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>Beginner</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>Beginer</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Little bit experienced</td>
-                </tr>
-                <tr>
-                    <td>C++</td>
-                    <td>Beginner</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <br>
-        <form action="/LOGIN" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="usename" required placeholder="Eg.Tilak Verma">
-            <br>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Eg.john@example.com">
-            <br>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <br>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-            <button disabled>send</button>
-        </form>
-    </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">My Portfolio</div>
+        <nav class="nav-links">
+            
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+    <main>
+    <section class= "hero">
+        <div class ="hero-text">
+            <h1>Hi, I am <br><span class="animated-title">Full Stack Developer</span></h1>
+            <p>Building modern web-applications with MERN stack.</p>
+        </div>
+        <div class="hero-image">
+            <img src="Me.jpg.jpeg" alt="My Profile Photo" width="230" height="230">
+        </div>
+        </section>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! My name is Disha Khandelwal. I am a web development student passionate about learning and building creative projects. This is my portfolio website where I showcase my skills and projects.</p>
+        </section>
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Beginner</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Beginner</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Learning</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="projects-vertical-container">
+                <div class="project-card-large">
+                    <h3>Project 1</h3>
+                    <p>A simple HTML & CSS webpage.</p>
+                </div>
+                <div class="project-card-large">
+                    <h3>Project 2</h3>
+                    <p>Another awesome mini project.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section contact-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" placeholder="write your message" required></textarea>
+                </div>
+                <button type="submit" class="button">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Disha Khandelwal. All rights reserved.</p>
+    </footer>
